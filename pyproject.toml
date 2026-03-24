@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-faah"
+version = "0.1.0"
+description = "Play a sound when pytest tests fail"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.entry-points."pytest11"]
+faah = "pytest_faah"
